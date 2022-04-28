@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用-自訂樣式(id)</title>
+    <style>
+        #theH1 {
+            color: blueviolet;
+        }
+
+        #theH3 {
+            color: blue;
+        }
+
+        .col1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="theH1">Apple</h1>
+    <h2 id="theH1">Banana</h2>
+    <h3 class="col1">Orange</h3>
+    <h3 class="col1" id="theH3">Orange</h3>
+    <h3 class="col1" id="theH3" style="color: orange;">Orange</h3>
+    <!-- style: inline > id > class -->
+
+    <!-- 即使css的id selector可以改到全部，js的getElementById只會選到一個 -->
+    <script>
+        document.getElementById("theH1").style.color = "orange";
+    </script>
+    <!-- script放body最後讓元素先存在，再對元素產生動作 -->
+</body>
+
+</html>

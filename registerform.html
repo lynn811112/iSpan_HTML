@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            font-size: 16px;
+            width: 400px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .st1 {
+            padding-bottom: 8px;
+            margin: 15px 0px;
+            display: flex;
+            align-items: center;
+            height: 25px;
+        }
+
+        .t1 {
+            text-align: right;
+            padding-right: 20px;
+            width: 80px;
+        }
+
+        .t2 {
+            margin: 0 15px 0 0;
+            vertical-align: middle;
+        }
+
+        .input1 {
+            font-size: 16px;
+            width: 260px;
+            padding: 3px 5px;
+            border: 1px solid rgb(160, 160, 160);
+            border-radius: 3px;
+            resize: none;
+        }
+
+
+        input[type="file"] {
+            height: 24px;
+            padding: 0;
+            margin: 0;
+            width: 270px;
+
+        }
+
+        input[type="file"]::file-selector-button {
+            border: 0;
+            border-right: 1px solid gray;
+            height: 24px;
+        }
+
+        .sub {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .sub input {
+            font-size: 16px;
+            width: 70px;
+            height: 35px;
+            padding: 2px;
+            font-weight: 400;
+            color: white;
+            background-color: rgb(11, 136, 194);
+            border: 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>基本資料</h1>
+    <form action="./RegisterFormServlet" method="post">
+        <div class="st1">
+            <label class="t1" for="name">姓名</label>
+            <input class="input1" type="text" name="name" id="name" autofocus>
+        </div>
+        <div class="st1">
+            <label class="t1" for="college">畢業學校</label>
+            <input class="input1" type="text" name="college" id="college">
+        </div>
+        <div class="st1">
+            <label class="t1" for="major">畢業科系</label>
+            <input class="input1" type="text" name="major" id="major">
+        </div>
+        <div class="st1">
+            <label class="t1" for="gender">性別</label>
+            <label class="t2">
+                <input type="radio" name="gender" value="male" id="">男性
+            </label>
+            <label class="t2">
+                <input type="radio" name="gender" value="female" id="">女性
+            </label>
+        </div>
+        <div class="st1">
+            <label class="t1" for="transportation">交通工具</label>
+            <label class="t2">
+                <input type="checkbox" name="transportation" value="bike" id="">腳踏車
+            </label>
+            <label class="t2">
+                <input type="checkbox" name="transportation" value="car" id="">汽車
+            </label>
+            <label class="t2">
+                <input type="checkbox" name="transportation" value="train" id="">火車
+            </label>
+        </div>
+        <div class="st1">
+            <label class="t1" for="file">上傳照片</label>
+            <input class="input1" style="padding: 0; margin: 0;" type="file" name="file" id="file">
+        </div>
+
+        <div class="sub">
+            <input type="submit" value="提送">
+        </div>
+
+
+    </form>
+</body>
+
+</html>

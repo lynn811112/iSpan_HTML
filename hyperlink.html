@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超連結元素</title>
+    <style>
+        /* .list a:link {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: rgb(78, 187, 98);
+        }
+
+        .list a:visited {
+            color: rgb(61, 126, 217);
+        }
+
+        .list a:hover {
+            color: coral;
+            text-decoration: underline;
+        }
+
+        .list a:active {
+            color: red;
+            font-size: 2rem;
+        } */
+
+        .list>li>a:link {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: rgb(78, 187, 98);
+        }
+
+        .list>li>a:visited {
+            color: rgb(61, 126, 217);
+        }
+
+        .list>li>a:hover {
+            color: coral;
+            text-decoration: underline;
+        }
+
+        .list>li>a:active {
+            color: red;
+            font-size: 2rem;
+        }
+
+        .list {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.ispan.com.tw">iSpan資展國際</a>
+    <a href="intro.html">Intro</a>
+    <a href="list.html">List</a>
+    <a href="mailto:lynn811112@gmail.com">寄信給我</a>
+    <a href="#news1">News1</a>
+    <a href="#news2">News2</a>
+    <a href="#news3">News3</a>
+    <a href="#news4">News4</a>
+
+    <ul class="list">
+        <li><a href="https://www.ispan.com.tw">Home</a></li>
+        <li><a href="#news2">About</a></li>
+        <li><a href="#news3">Blog</a></li>
+        <li><a href="#news4">Contact</a></li>
+    </ul>
+
+    <div id="news1">
+        <h1>兒童染Omicron 爆「這恐怖症狀」！台現首例醫示警</h1>
+        <figure style="background-color: gold;">
+            <img src="images/covid.webp" alt="Covid-19" title="Covid Cases 2022-04-18" width="400">
+            <a
+                href="https://tw.news.yahoo.com/%E7%9B%B4%E6%92%AD%EF%BC%8F%E5%AE%B6%E7%94%A8%E5%BF%AB%E7%AF%A9%E5%AF%A6%E5%90%8D%E5%88%B6%E6%8B%9A-5-%E6%9C%88%E5%88%9D%E4%B8%8A%E8%B7%AF-%E6%8C%87%E6%8F%AE%E4%B8%AD%E5%BF%83%E4%B8%8B%E5%8D%88%E8%AA%AA%E6%98%8E-024930439.html"><img
+                    src="images/covid.webp" alt="Covid-19" title="Covid Cases 2022-04-18" width="400"></a>
+            <figcaption>Covid Cases 2022-04-18 (指揮中心提供)</figcaption>
+        </figure>
+        <p>台灣近日出現首例新冠肺炎兒童重症病例，新北市一名2歲男童確診後出現發燒、抽搐到昏迷，後續送醫插管治療，昨（17）日指揮官陳時中表示已請台大醫院兒科醫師一起會診，大家都很努力救治。林口長庚醫院兒科急診主治醫師吳昌騰昨發文指出，「抽搐」恐是兒童感染Omicron後會出現的徵兆，提醒家長們特別注意。
+        </p>
+        <p>吳昌騰昨在臉書粉專「來講兒科急診的543-吳昌騰醫師」發文探討兒童感染Omicron 與抽搐（Convulsions）相關議題，他提到國內出現首例兒童感染
+            Omicron重症個案，臨床上是以抽搐及腦炎來表現，這讓家長及第一線兒科醫師都繃緊神經。</p>
+        <p>吳昌騰接著提出幾個國外研究的病例報告，包括瑞典斯德哥爾摩研究，當Omicron
+            佔瑞典新冠肺炎病例的98%以上時，4名患有新冠肺炎的兒童因抽搐而被送往兒科急診，其中有3人是男孩，他們當中過去並無癲癇病史或熱痙攣病史，但染疫後有2名年幼男孩都發燒，1人在抽搐前發燒，另1人則在抽搐時發燒。</p>
+        <p>吳昌騰還提到南非研究，該國去年（2021）10月至12月間對該地區成人和兒童的75個病毒樣本進行了測序，其中74個（99%）是 omicron 變種病毒。而上述期間，初次診斷為COVID-19的住院兒科患者（年齡≤13
+            歲）中，138 名患者中有「19 名（31%）」報告了抽搐發作，其中只有2位兒科患者先前有痙攣病史（癲癇1位和腦性麻痺1位），這可以解釋2位痙攣發作的表現，因此「17位兒童是先前完全沒有痙攣病史。」</p>
+        <span>This is a span!</span>
+    </div>
+    <div id="news2" style="background-color: beige;">
+        <h1>兒童染Omicron 爆「這恐怖症狀」！台現首例醫示警</h1>
+        <p>台灣近日出現首例新冠肺炎兒童重症病例，新北市一名2歲男童確診後出現發燒、抽搐到昏迷，後續送醫插管治療，昨（17）日指揮官陳時中表示已請台大醫院兒科醫師一起會診，大家都很努力救治。林口長庚醫院兒科急診主治醫師吳昌騰昨發文指出，「抽搐」恐是兒童感染Omicron後會出現的徵兆，提醒家長們特別注意。
+        </p>
+        <p>吳昌騰昨在臉書粉專「來講兒科急診的543-吳昌騰醫師」發文探討兒童感染Omicron 與抽搐（Convulsions）相關議題，他提到國內出現首例兒童感染
+            Omicron重症個案，臨床上是以抽搐及腦炎來表現，這讓家長及第一線兒科醫師都繃緊神經。</p>
+        <p>吳昌騰接著提出幾個國外研究的病例報告，包括瑞典斯德哥爾摩研究，當Omicron
+            佔瑞典新冠肺炎病例的98%以上時，4名患有新冠肺炎的兒童因抽搐而被送往兒科急診，其中有3人是男孩，他們當中過去並無癲癇病史或熱痙攣病史，但染疫後有2名年幼男孩都發燒，1人在抽搐前發燒，另1人則在抽搐時發燒。</p>
+        <p>吳昌騰還提到南非研究，該國去年（2021）10月至12月間對該地區成人和兒童的75個病毒樣本進行了測序，其中74個（99%）是 omicron 變種病毒。而上述期間，初次診斷為COVID-19的住院兒科患者（年齡≤13
+            歲）中，138 名患者中有「19 名（31%）」報告了抽搐發作，其中只有2位兒科患者先前有痙攣病史（癲癇1位和腦性麻痺1位），這可以解釋2位痙攣發作的表現，因此「17位兒童是先前完全沒有痙攣病史。」</p>
+        <span>This is a span!</span>
+    </div>
+    <div id="news3" style="background-color: gainsboro;">
+        <h1>兒童染Omicron 爆「這恐怖症狀」！台現首例醫示警</h1>
+        <p>台灣近日出現首例新冠肺炎兒童重症病例，新北市一名2歲男童確診後出現發燒、抽搐到昏迷，後續送醫插管治療，昨（17）日指揮官陳時中表示已請台大醫院兒科醫師一起會診，大家都很努力救治。林口長庚醫院兒科急診主治醫師吳昌騰昨發文指出，「抽搐」恐是兒童感染Omicron後會出現的徵兆，提醒家長們特別注意。
+        </p>
+        <p>吳昌騰昨在臉書粉專「來講兒科急診的543-吳昌騰醫師」發文探討兒童感染Omicron 與抽搐（Convulsions）相關議題，他提到國內出現首例兒童感染
+            Omicron重症個案，臨床上是以抽搐及腦炎來表現，這讓家長及第一線兒科醫師都繃緊神經。</p>
+        <p>吳昌騰接著提出幾個國外研究的病例報告，包括瑞典斯德哥爾摩研究，當Omicron
+            佔瑞典新冠肺炎病例的98%以上時，4名患有新冠肺炎的兒童因抽搐而被送往兒科急診，其中有3人是男孩，他們當中過去並無癲癇病史或熱痙攣病史，但染疫後有2名年幼男孩都發燒，1人在抽搐前發燒，另1人則在抽搐時發燒。</p>
+        <p>吳昌騰還提到南非研究，該國去年（2021）10月至12月間對該地區成人和兒童的75個病毒樣本進行了測序，其中74個（99%）是 omicron 變種病毒。而上述期間，初次診斷為COVID-19的住院兒科患者（年齡≤13
+            歲）中，138 名患者中有「19 名（31%）」報告了抽搐發作，其中只有2位兒科患者先前有痙攣病史（癲癇1位和腦性麻痺1位），這可以解釋2位痙攣發作的表現，因此「17位兒童是先前完全沒有痙攣病史。」</p>
+        <span>This is a span!</span>
+    </div>
+    <div id="news4" style="background-color: rgb(243, 243, 160);">
+        <h1>兒童染Omicron 爆「這恐怖症狀」！台現首例醫示警</h1>
+        <p>台灣近日出現首例新冠肺炎兒童重症病例，新北市一名2歲男童確診後出現發燒、抽搐到昏迷，後續送醫插管治療，昨（17）日指揮官陳時中表示已請台大醫院兒科醫師一起會診，大家都很努力救治。林口長庚醫院兒科急診主治醫師吳昌騰昨發文指出，「抽搐」恐是兒童感染Omicron後會出現的徵兆，提醒家長們特別注意。
+        </p>
+        <p>吳昌騰昨在臉書粉專「來講兒科急診的543-吳昌騰醫師」發文探討兒童感染Omicron 與抽搐（Convulsions）相關議題，他提到國內出現首例兒童感染
+            Omicron重症個案，臨床上是以抽搐及腦炎來表現，這讓家長及第一線兒科醫師都繃緊神經。</p>
+        <p>吳昌騰接著提出幾個國外研究的病例報告，包括瑞典斯德哥爾摩研究，當Omicron
+            佔瑞典新冠肺炎病例的98%以上時，4名患有新冠肺炎的兒童因抽搐而被送往兒科急診，其中有3人是男孩，他們當中過去並無癲癇病史或熱痙攣病史，但染疫後有2名年幼男孩都發燒，1人在抽搐前發燒，另1人則在抽搐時發燒。</p>
+        <p>吳昌騰還提到南非研究，該國去年（2021）10月至12月間對該地區成人和兒童的75個病毒樣本進行了測序，其中74個（99%）是 omicron 變種病毒。而上述期間，初次診斷為COVID-19的住院兒科患者（年齡≤13
+            歲）中，138 名患者中有「19 名（31%）」報告了抽搐發作，其中只有2位兒科患者先前有痙攣病史（癲癇1位和腦性麻痺1位），這可以解釋2位痙攣發作的表現，因此「17位兒童是先前完全沒有痙攣病史。」</p>
+        <span>This is a span!</span>
+    </div>
+</body>
+
+</html>

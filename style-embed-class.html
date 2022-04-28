@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用-自訂樣式(class)</title>
+    <style>
+        .col-red {
+            color: red;
+        }
+
+        h2.style1 {
+            color: rgb(43, 153, 255);
+        }
+
+        .col1 {
+            color: gray;
+        }
+
+        .col2 {
+            color: brown;
+        }
+
+        /* 套用n個class針對同一屬性不同定義
+           會以style sheet裡排序為後者為準 */
+
+        .sty1 {
+            font-style: italic;
+        }
+
+        .size1 {
+            font-size: 2em;
+        }
+
+        .under1 {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+
+        .hover1:hover {
+            background-color: rgb(255, 230, 71);
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="col-red">Apple</h1>
+    <hr>
+    <h1 class="style1">Monday</h1>
+    <h2 class="style1">Monday</h2>
+    <hr>
+    <h4 class="col1 sty1 size1">Panda</h4>
+    <h4 class="col2 under1 hover1">Monkey</h4>
+</body>
+
+</html>

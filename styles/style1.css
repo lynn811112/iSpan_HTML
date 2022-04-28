@@ -1,0 +1,42 @@
+.col-red {
+    color: red;
+}
+
+h2.style1 {
+    color: rgb(43, 153, 255);
+}
+
+.col1 {
+    color: gray;
+}
+
+.col2 {
+    color: brown;
+}
+
+.sty1 {
+    font-style: italic;
+}
+
+.size1 {
+    font-size: 2em;
+}
+
+.under1 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.hover1:hover {
+    background-color: rgb(255, 230, 71);
+    font-size: 2em;
+}
+
+p {
+    color: gray;
+    font-size: 2em;
+}
+
+#p1 {
+    color: blue;
+}

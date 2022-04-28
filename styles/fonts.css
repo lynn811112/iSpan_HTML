@@ -1,0 +1,25 @@
+p {
+    font-family: 'Square Peg', cursive;
+}
+
+#p1 {
+    font-family: 'My Soul', cursive;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(../reference/fonts/JustOldFashion.ttf);
+}
+
+.font1 {
+    font-family: font1;
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../reference/fonts/SCRIPTIN.ttf);
+}
+
+.font2 {
+    font-family: font2;
+}

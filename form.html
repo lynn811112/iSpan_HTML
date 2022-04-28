@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            /* margin: 0px;
+            padding: 0px; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        fieldset {
+            background-color: white;
+            border: 2px solid rgb(150, 204, 224);
+            border-radius: 5px;
+            margin: 0 0 20px 0;
+            padding: 0 20px;
+        }
+
+        legend {
+            color: rgb(34, 133, 203);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .st1 {
+            padding-bottom: 5px;
+            margin: 15px 0px;
+            display: flex;
+            align-items: center;
+            height: 25px;
+        }
+
+        .t1 {
+            width: 100px;
+        }
+
+        .t2 {
+            margin: 0 15px 0 0;
+            vertical-align: middle;
+        }
+
+        .input1 {
+            width: 260px;
+            padding: 3px 5px;
+            border: 1px solid rgb(160, 160, 160);
+            border-radius: 3px;
+            resize: none;
+        }
+
+        input[type="checkbox"] {
+            margin: 0px 5px 2px 0;
+            vertical-align: middle;
+        }
+
+        input[type="radio"] {
+            margin: 0px 5px 2px 0;
+            vertical-align: middle;
+        }
+
+        input[type="file"] {
+            height: 22px;
+            padding: 0;
+            margin: 0;
+            width: 270px;
+            /* color: aqua; */
+        }
+
+        input[type="file"]::file-selector-button {
+            border: 0;
+            border-right: 1px solid gray;
+            height: 22px;
+        }
+
+
+        /* option {
+            height: 50px;
+            line-height: 1.5;
+            padding: 3px 5px;
+        } */
+
+
+        .sub {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .sub input {
+            width: 70px;
+            height: 30px;
+            padding: 2px;
+            font-weight: 400;
+            color: white;
+            background-color: rgb(11, 136, 194);
+            border: 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Account <em>(required)</em></legend>
+            <div class="st1">
+                <label class="t1" for="name">Name</label>
+                <input class="input1" type="text" name="name" id="name" placeholder="Name" autofocus
+                    autocomplete="additional-name" required>
+            </div>
+            <div class="st1">
+                <label class="t1" for="email">Email</label>
+                <input class="input1" type="email" name="email" id="email" placeholder="id@gmail.com" list="email-list"
+                    required>
+                <datalist id="email-list">
+                    <option value="@gmail.com"></option>
+                    <option value="@hotmail.com"></option>
+                    <option value="@yahoo.com"></option>
+                </datalist>
+            </div>
+            <div class="st1">
+                <label class="t1" for="password">Password</label>
+                <input class="input1" type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="st1">
+                <label class="t1" for="idcode">ID No.</label>
+                <input class="input1" type="text" name="idcode" id="idcode" placeholder="A123456789"
+                    pattern="[A-Z]{1}[1-2,8-9]{1}\d{8}" required maxlength="10">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <div class="st1">
+                <label class="t1" for="city">City</label>
+                <select class="input1" style="width: 272px" name="city" id="city">
+                    <!-- attribute "size" in select defines how many options you want to see at once-->
+                    <option value="TPE">Taipei City</option>
+                    <option value="TPH" selected>New Taipei City</option>
+                    <option value="TYU">Taoyuan City</option>
+                    <option value="TXG">Taichung City</option>
+                </select>
+            </div>
+            <div class="st1">
+                <label class="t1" for="address">Address</label>
+                <input class="input1" type="text" name="address" id="address">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <div class="st1">
+                <label class="t1" for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label class="t2" for="male">Male</label>
+                <label class="t2">
+                    <input type="radio" name="gender" value="female" id="">Female
+                </label>
+            </div>
+            <div class="st1">
+                <label class="t1" for="birthdate">Birthday</label>
+                <input class="input1" type="date" name="birthdate" id="birthdate">
+            </div>
+            <div class="st1">
+                <label class="t1" for="height">Height</label>
+                <input class="input1" type="number" name="height" id="height" min="50" max="220" placeholder="(cm)">
+            </div>
+            <div class="st1">
+                <label class="t1" for="weight">Weight</label>
+                <input class="input1" type="number" name="weight" id="weight" min="0" max="100" placeholder="(kg)">
+            </div>
+            <div class="st1">
+                <label class="t1" for="hobby">Hobby</label>
+                <label class="t2">
+                    <input type="checkbox" name="hobby" value="music" id="">Music
+                </label>
+                <label class="t2">
+                    <input type="checkbox" name="hobby" value="sport" id="">Sport
+                </label>
+                <label class="t2">
+                    <input type="checkbox" name="hobby" value="travel" id="">Travel
+                </label>
+            </div>
+            <div class="st1">
+                <label class="t1" for="file">Upload Pics</label>
+                <input class="input1" style="padding: 0; margin: 0;" type="file" name="file" id="file" multiple>
+            </div>
+            <div class="st1">
+                <label class="t1" for="profile-url">Profile</label>
+                <input class="input1" type="url" name="profile-url" id="profile-url" placeholder="https://">
+            </div>
+            <div class="st1" style="height: auto">
+                <label class="t1" for="comment">Comment</label>
+                <textarea class="input1" name="comment" id="comment" cols="30" rows="5"
+                    placeholder="Please leave your comment here"></textarea>
+            </div>
+        </fieldset>
+
+
+        <div class="sub">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" disabled>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
